@@ -1,0 +1,31 @@
+@import "../utils/variables.scss";
+
+body {
+    margin: 0;
+    background-color: #F6F6F6;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+
+h1 {
+    font-family: $font-para;
+    font-size: 24px;
+    font-weight: 700;
+}
+h2 {
+    font-family: $font-para;
+    font-size: 24px;
+    font-weight: 700;
+}
+h3 {
+    font-family: $font-para;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000; 
+}
+p,a {
+    font-family: $font-para;
+}

@@ -1,1 +1,32 @@
-/*# sourceMappingURL=normalize.css.map */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap);
+body {
+  margin: 0;
+  background-color: #F6F6F6;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+p, a {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=normalize.css.map */
