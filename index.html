@@ -13,15 +13,15 @@
 </head>
 <body>
         <header class="header">
-            <section class="header__logo">
+            <article class="header__logo">
                 <img src="images/logo/ohmyfood@2x.svg" alt="logo" width="162" height="44">
-            </section>
-            <section class="header__localisation">
+            </article>
+            <article class="header__localisation">
                 <article class="header__localisation__value">
                     <i class="fas fa-map-marker-alt"></i>
                     <p>Paris, Belleville</p>
                 </article>
-            </section>
+            </article>
         </header>
         <main>
             <section class="hero">
@@ -30,41 +30,43 @@
                 <a href="#" class="hero__link">Explorer nos restaurants</a>
             </section>
 
-            <section class="working">
-                <h2 class="working__title">Fonctionnement</h2>
-                 <article class="working__cards">
-                    <div class="working__cards__number">
-                        <p>1</p>
-                    </div>
-                    <div class="working__cards__content">
-                        <i class="fas fa-mobile-screen-button"></i>
-                        <h3 class="working__cards__content__title">Choisissez un restaurant</h3>
-                    </div>
-                 </article>
-                 <article class="working__cards">
-                    <div class="working__cards__number">
-                        <p>2</p>
-                    </div>
-                    <div class="working__cards__content">
-                        <i class="fas fa-list"></i>
-                        <h3 class="working__cards__content__title">Composez votre menu</h3>
-                    </div>
-                 </article>
-                 <article class="working__cards">
-                    <div class="working__cards__number">
-                        <p>3</p>
-                    </div>
-                    <div class="working__cards__content">
-                        <i class="fas fa-store purple"></i>
-                        <h3 class="working__cards__content__title">Dégustez au restaurant</h3>
-                    </div>
-                 </article>
-            </section>
+            <div class="working">
+                <section class="working__section">
+                    <h2 class="working__section__title">Fonctionnement</h2>
+                    <article class="working__section__cards">
+                        <div class="working__section__cards__number">
+                            <p>1</p>
+                        </div>
+                        <div class="working__section__cards__content">
+                            <i class="fas fa-mobile-screen-button"></i>
+                            <h3 class="working__section__cards__content__title">Choisissez un restaurant</h3>
+                        </div>
+                    </article>
+                    <article class="working__section__cards">
+                        <div class="working__section__cards__number">
+                            <p>2</p>
+                        </div>
+                        <div class="working__section__cards__content">
+                            <i class="fas fa-list"></i>
+                            <h3 class="working__section__cards__content__title">Composez votre menu</h3>
+                        </div>
+                    </article>
+                    <article class="working__section__cards">
+                        <div class="working__section__cards__number">
+                            <p>3</p>
+                        </div>
+                        <div class="working__section__cards__content">
+                            <i class="fas fa-store purple"></i>
+                            <h3 class="working__section__cards__content__title">Dégustez au restaurant</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
 
             <section class="restaurant">
-                <h2 class="restaurant__title">Fonctionnement</h2>
+                <h2 class="restaurant__title">Restaurants</h2>
                 <article class="restaurant__cards new">
-                    <a href="#" class="restaurant__cards__content">
+                    <a href="restaurants/lapalette.html" class="restaurant__cards__content">
                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="un bon petit plat de grand mère" >
                         <div class="restaurant__cards__content__info">
                             <h3 class="restaurant__cards__content__info__title">La palette du goût</h3>
@@ -151,14 +153,14 @@
         </main> 
         <footer class="footer">
             <h2 class="footer__title">ohmyfood</h2>
-            <section class="footer__menu">
+            <div class="footer__menu">
                 <ul class="footer__menu__content">
                     <li><a class="footer__menu__content--gras" href="#"><span><i class="fa-solid fa-utensils"></i></span>Proposer un restaurant</a></li>
                     <li><a class="footer__menu__content--gras" href="#"><span><i class="fa-solid fa-handshake-angle"></i></span>Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </section>
+            </div>
         </footer>
 </body>
 </html>

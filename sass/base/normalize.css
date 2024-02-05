@@ -29,4 +29,11 @@ h3 {
 
 p, a {
   font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 1440px) {
+  section {
+    max-width: 1080px;
+    margin: auto;
+  }
 }/*# sourceMappingURL=normalize.css.map */
