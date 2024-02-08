@@ -1,5 +1,76 @@
 @import "base/normalize.scss";
 // Index.html
+
+.loader {
+    position: fixed;
+    display: grid;
+    inset: 0;
+    z-index: 20;
+    animation: start 300ms forwards 2s;
+    transform-origin: center;
+    
+    &__background--glass {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        backdrop-filter: blur(10px);
+    } 
+    &__circle {
+        margin: auto;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        animation: circle 2s linear infinite;
+    }
+
+    &__circle:before,
+    &__circle:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        border: 7px solid transparent;
+    }
+
+    &__circle:before {
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        border-top-color: #99e2d0;
+        animation: circle 1.5s linear 4.5s infinite;
+    }
+
+    &__circle:after {
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        border-top-color: #008766;
+        animation: circle 1.5s linear infinite;
+    }
+}
+
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  } 
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes start {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    display: none;
+    }
+} 
+
+
 .header {
     box-shadow: 0px 4px 4px 0px #00000040;
     position: fixed;
@@ -176,7 +247,18 @@ main {
             background-color: #FFF;
             border-radius: 15px;
             text-decoration: none;
+            width: 100%;
+            height: 252px;
+            position: relative;
             @media (max-width: 374px) { max-width: 286px;}
+            &__link {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
             & img {
                 border-top-right-radius: 15px;
                 border-top-left-radius: 15px;
@@ -223,6 +305,7 @@ main {
                     width: 22px;
                     height: 22px;
                     cursor: pointer;
+                    z-index: 3;
                 }
             }
         }
@@ -359,7 +442,7 @@ main {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 32px 17px 32px 17px;
+            padding: 32px 17px 0 17px;
             @media (min-width: 1024px) {
                 justify-content: center;
             }
@@ -373,7 +456,7 @@ main {
                 display: none;
                 &:checked {
                     +label svg path {
-                        fill: url("#gradient-horizontal");
+                        fill: url(".gradient-horizontal");
                         stroke: none;
                     }
                 } 
@@ -394,6 +477,7 @@ main {
         &__entree,
         &__main,
         &__dessert {
+            margin-top: 30px;
             margin-left: 13px;
             margin-right: 13px;
             @media (min-width: 1024px) {
@@ -420,7 +504,7 @@ main {
             &__checkbox {
                 display: none;
                 &:checked {
-                    +label div:last-child {
+                    +label span:last-child {
                         margin-right: 0px;
                     }
                 }
@@ -447,7 +531,7 @@ main {
                 &__info {
                     display: flex;
                     flex-direction: column;
-                    flex-grow: 1;
+                    flex: 1;
                     padding: 16px 0px 16px 15px;
                     white-space: nowrap;
                     overflow-x: hidden;
