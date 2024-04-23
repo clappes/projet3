@@ -456,7 +456,7 @@ main {
                 display: none;
                 &:checked {
                     +label svg path {
-                        fill: url(".gradient-horizontal");
+                        fill: url("#gradient-horizontal");
                         stroke: none;
                     }
                 } 
